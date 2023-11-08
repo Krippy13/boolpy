@@ -65,7 +65,7 @@ class Test(Client):
                          protect_content)
 
 
-    def track_log(self, message: Message) -> dict:
+    def track_message(self, message: Message) -> dict:
         cid = message.chat.id
         mid = message.message_id
         data = self.track.get(cid)
@@ -88,7 +88,7 @@ class Test(Client):
         )
         if type(message) is Message:
             if self.track is not None and track is True:
-                self.track_log(message)
+                self.track_message(message)
         return message
 
     async def delete_history(self, cid: Union[int, str]) -> int:
