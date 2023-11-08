@@ -1,7 +1,7 @@
 #!/bin/python3
 
 from boolpy.logger import get_logger
-
+print("biscotto") 
 logger = get_logger('JsonManager')
 
 # $ # $ # $ # $ # $ # $ # $ # $ # $
