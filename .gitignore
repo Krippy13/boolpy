@@ -1,5 +1,0 @@
-.gitignore
-__pycache__
-telegram/__pycache__
-telegram/test/__pycache__
-
